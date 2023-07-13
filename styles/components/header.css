@@ -20,10 +20,6 @@
     display: block;
     margin-right: var(--size-sm);
 }
-.header__btn {
-    font-size: var(--size-sm);
-    display: block;
-}
 
 .logo { 
     display: flex;
@@ -38,7 +34,7 @@
 }
 
 .header__logo {
-    height: var(--size-xs);
+    height: var(--size-base);
     transition: transform 0.3s ease out;
     align-self: center;
     color: var(--clr-wintersky);
@@ -47,7 +43,7 @@
 
 .logo__text {
     font-weight: 200;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     color:var(--clr-dark);
     align-self: center;
 }
@@ -56,15 +52,27 @@
     font-weight: 300;
 }
 
-/* 
+
 @media (min-width: 475px) {
 
 }
 
 @media (min-width: 640px) {
+    .header__bars {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .logo__text {
+        font-weight: 300;
+    }
+    
+    .logo__text span {
+        font-weight: 400;
+    }
 }
 
-  */
+ 
 @media (min-width: 768px) {
     
 .header__menu {
@@ -74,8 +82,10 @@
     padding: 0;
     gap: 1em;
     transform: color 0.3s;
+    margin-right: var(--size-base);
 }
 .header__link {
+    font-size: var(--size-base);
     transition: color 0.3s;
 }
 .header__link:hover{
@@ -86,7 +96,14 @@
 }
 }
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+    
+.header__menu {
+    gap: 3em;
+}
+.header__link {
+    font-size: var(--size-lg);
+}
 
 }
 
@@ -98,4 +115,4 @@
 
 }
 
- */
+
