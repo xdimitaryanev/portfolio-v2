@@ -24,22 +24,22 @@
     display: block;
 }
 
-.logo {
+.logo { 
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
     gap: 0.3em;
-    padding-left: 1em;
+    padding: 0;
+    padding-left: 0.1em;
     color: var(--clr-light);
     flex-grow: 1;
-
 }
 
 .header__logo {
-    height: var(--size-base);
-    width: var(--size-base);
+    height: var(--size-xs);
     transition: transform 0.3s ease out;
-    display: block;
+    align-self: center;
+    color: var(--clr-wintersky);
 }
 
 
@@ -47,6 +47,7 @@
     font-weight: 200;
     font-size: var(--size-sm);
     color:var(--clr-dark);
+    align-self: center;
 }
 
 .logo__text span {

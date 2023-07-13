@@ -1,0 +1,40 @@
+.hero {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero__title {
+    color: var(--clr-light);
+    font-size: var(--size-3xl);
+}
+
+.hero__subtitle {
+    color: var(--clr-light);
+    font-size: var(--size-2xl);
+    font-weight: 600;
+
+}
+
+.hero__description {
+    color: var(--clr-slate500);
+    font-size: var(--size-sm);
+
+}
+
+.hero__img {
+
+}
+
+.hero__btn {
+    margin-top: 1em;
+    font-size: var(--size-xs);
+}
+
+.hero__content {
+    color: var(--clr-light);
+    font-size: var(--size-xs);
+
+}

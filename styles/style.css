@@ -1,10 +1,15 @@
 :root {
 
-    --clr-dark: #040732;
+    --clr-dark: #2B2730;
     --clr-light: #FBFDFF;
-    --clr-lightblue: #2188FD;
-    --clr-wintersky: #FF006E;
-    --clr-blueviolet: #8338EC;
+    --clr-yellow: #F0EB8D;
+    --clr-wintersky: #E966A0;
+    --clr-blueviolet: #8F43EE;
+    --clr-mango: #FFBE0B;
+    --clr-slate700: #334155;
+    --clr-slate400: #94a3b8;
+    --clr-slate300: #cbd5e1;
+    --clr-slate500: #64748b; 
 
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
@@ -63,4 +68,5 @@ button {
     background: none;
     cursor: pointer;
 }
+
 
