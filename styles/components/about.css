@@ -16,7 +16,7 @@
     opacity: 80%;
     margin-bottom: var(--size-2xl);
     margin-top: var(--size-2xl);
-    border: 2px solid var(--clr-yellow);
+    mix-blend-mode: luminosity;
 }
 
 .about__content {
