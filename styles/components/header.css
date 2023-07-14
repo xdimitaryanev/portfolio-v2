@@ -27,7 +27,6 @@
     align-content: center;
     gap: 0.3em;
     padding: 0;
-    padding-left: 0.1em;
     color: var(--clr-light);
     flex-grow: 1;
     margin-left: var(--size-sm);
@@ -108,6 +107,29 @@
 }
 
 @media (min-width: 1280px) {
+    .logo { 
+        gap: 1em;
+        padding: 0;
+
+        margin-left: var(--size-xl);
+    }
+    .header__logo {
+        height: var(--size-2xl);
+    }
+    
+    
+    .logo__text {
+        font-weight: 300;
+        font-size: var(--size-xl);
+
+    }
+.header__menu {
+    gap: 8em;
+    margin-right: var(--size-5xl);
+}
+.header__link {
+    font-size: var(--size-xl);
+}
 
 }
 
