@@ -33,6 +33,18 @@
     margin-top: var(--size-6xl);
 }
 
+.about__subimage {
+    height: 22em;
+    margin-top: var(--size-8xl);
+    margin-left: var(--size-9xl);
+    margin-bottom: var(--size-7xl);
+    justify-self: center;
+    align-self: center;
+    border: 0.2em solid #9043ee28;
+    padding: 2em 2em;
+    border-radius: 5em;
+}
+
 .about__content {
     color: var(--clr-slate400);
     margin-left: var(--size-xs);
