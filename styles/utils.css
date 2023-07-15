@@ -1,4 +1,4 @@
-.btn {
+/* .btn {
     display: inline-block;
     font-weight: 600;
     text-decoration: none;
@@ -12,8 +12,82 @@
 }
 
 .btn:hover {
-    transform: translateY(-1px);
-}
+    transform: translateY(-2px);
+
+} */
+
+/* 
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  /* .btn {
+    --border-right: 0.2em;
+    --text-stroke-color: var(--clr-slate400);
+    --animation-color: var(--clr-yellow);
+    --fs-size: 2em;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    font-size: var(--size-2xl);
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  /* .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  /* .btn:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  } */
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .btn {
+    background: var(--clr-wintersky);
+    box-shadow: 0 0 25px var(--clr-wintersky);
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 5px var(--clr-wintersky),
+                0 0 25px var(--clr-wintersky),
+                0 0 50px var(--clr-wintersky),
+                0 0 100px var(--clr-blueviolet)
+  }
+
+
 
 .container {
     width: 100%;
@@ -27,7 +101,6 @@
     margin-top: 5rem;
 }
 
-
 .divider {
     margin-top: var(--size-10xl);
     margin-top: var(--size-10xl);
@@ -35,6 +108,14 @@
     width: 50%;  
     opacity: 10%;
     }
+
+.horizontal__divider {
+    border-left: 1px solid var(--clr-blueviolet);
+    height: 20em;
+    opacity: 10%;
+    margin-left: 5em;
+    margin-right: 5em;
+}
 
 @media (min-width: 475px) {
     .container {

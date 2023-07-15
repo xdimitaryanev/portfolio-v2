@@ -34,15 +34,18 @@
 }
 
 .about__subimage {
-    height: 22em;
-    margin-top: var(--size-8xl);
-    margin-left: var(--size-9xl);
-    margin-bottom: var(--size-7xl);
-    justify-self: center;
-    align-self: center;
-    border: 0.2em solid #9043ee28;
-    padding: 2em 2em;
-    border-radius: 5em;
+    width: 35em;
+    padding: 0 0;
+    margin-left: var(--size-6xl);
+    opacity: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 6rem;
+}
+
+.about__subimage:hover {
+    opacity: 80%;
+    transform: translateY(-0.5em);
 }
 
 .about__content {
@@ -77,11 +80,17 @@
     font-weight: 400;
 }
 
+.about__certimg {
+    width: 7em;
+    margin-bottom: var(--size-2xl);
+}
+
 .about__certlist {
     padding: 0 0;
     text-align: center;
     margin-left: var(--size-sm);
     margin-right: var(--size-sm);
+
 }
 
 .about__certlist a {
@@ -90,6 +99,7 @@
     font-size: var(--size-sm);
     cursor: pointer;
     transition: color 0.3s;
+    line-height: 2em;
 }
 
 .about__certlist a:hover {

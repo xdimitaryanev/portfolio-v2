@@ -10,7 +10,7 @@ import './styles/utils.css'
 
 
 
-const logoEl = document.querySelector(".header__logo")
+const logoEl = document.querySelector(".header__rotateX")
 window.addEventListener("scroll", rotateSvg);
 function rotateSvg () {
   const rotationAngle = window.scrollY * 0.2;
