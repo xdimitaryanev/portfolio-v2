@@ -8,13 +8,10 @@ import './styles/components/work.css'
 import './styles/components/contact.css'
 import './styles/utils.css'
 
-
-
-const logoEl = document.querySelector(".header__rotateX")
-window.addEventListener("scroll", rotateSvg);
-function rotateSvg () {
-  const rotationAngle = window.scrollY * 0.2;
-  logoEl.style.transform = `rotate(${rotationAngle}deg)`;
-}
+// window.addEventListener("scroll", rotateSvg);
+// function rotateSvg () {
+//   const rotationAngle = window.scrollY * 0.2;
+//   logoEl.style.transform = `rotate(${rotationAngle}deg)`;
+// }
 
 

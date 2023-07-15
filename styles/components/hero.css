@@ -24,10 +24,10 @@
 }
 
 .hero__description {
-    color: var(--clr-wintersky);
+    color: var(--clr-blueviolet);
     font-size: var(--size-sm);
-    margin-top: 0.75em;
-
+    margin-top: var(--size-xxs);
+    margin-bottom: var(--size-xxs);
 }
 
 .hero__img {
@@ -48,6 +48,7 @@
 .hero__content {
     color: var(--clr-slate400);
     font-size: var(--size-xs);
+    max-width: 60ch;
 
 }
 .hero__wrapper {
@@ -189,6 +190,7 @@
     
     .hero__description {
         font-size: var(--size-2xl);
+
     
     }
     

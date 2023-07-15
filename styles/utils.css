@@ -59,7 +59,7 @@
     filter: drop-shadow(0 0 23px var(--animation-color))
   } */
 
-  .btn {
+  .btn__fancy {
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
@@ -71,23 +71,20 @@
     letter-spacing: 4px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: all 0.5s;
     transition-property: box-shadow;
   }
   
-  .btn {
+  .btn__fancy {
     background: var(--clr-wintersky);
     box-shadow: 0 0 25px var(--clr-wintersky);
   }
   
-  .btn:hover {
+  .btn__fancy:hover {
     box-shadow: 0 0 5px var(--clr-wintersky),
                 0 0 25px var(--clr-wintersky),
-                0 0 50px var(--clr-wintersky),
-                0 0 100px var(--clr-blueviolet)
+                0 0 50px var(--clr-wintersky)               
   }
-
-
 
 .container {
     width: 100%;
@@ -116,6 +113,13 @@
     margin-left: 5em;
     margin-right: 5em;
 }
+
+
+a {
+    color: var(--clr-wintersky);
+}
+
+
 
 @media (min-width: 475px) {
     .container {
