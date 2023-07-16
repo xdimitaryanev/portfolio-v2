@@ -15,3 +15,24 @@ import './styles/utils.css'
 // }
 
 
+
+const headerAboutEL = document.getElementById("header_about");
+const aboutImg = document.querySelector(".about__img");
+
+headerAboutEL.addEventListener("click", (e)=>{
+  e.preventDefault()
+  aboutImg.scrollIntoView({ behavior: "smooth",inline: "nearest" });
+})
+
+
+
+const headerWorkEl = document.getElementById("header_work");
+const workTitleEl = document.querySelector(".work__title");
+
+headerWorkEl.addEventListener("click", (e)=>{
+  e.preventDefault()
+  workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
+
+})
+
+

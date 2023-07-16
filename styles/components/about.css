@@ -39,17 +39,24 @@
 
 .about__img:hover {
     filter: saturate(60%);
+    box-shadow: 0 0 5px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet),
+    0 0 40px var(--clr-blueviolet),
+    0 0 60px var(--clr-blueviolet)
 }
 
 .about__subimage {
     width: 35em;
-    margin-left: var(--size-6xl);
     opacity: 50%;
     cursor: pointer;
     transition: all 0.3s;
     margin-top: 6rem;
     border-radius: 2em;
     filter: saturate(40%);
+    box-shadow: 0 0 5px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet),
+    0 0 40px var(--clr-blueviolet),
+    0 0 60px var(--clr-blueviolet)
 }
 
 .about__subimage:hover {
@@ -93,10 +100,20 @@
 .about__certimg {
     width: 5em;
     margin-bottom: var(--size-2xl);
-    padding: 0.1em 0.1em;
+    padding: 0.5em 0.5em;
     border-radius: 10%;
+    background-color: var(--clr-slate700);
+    border: 1px solid var(--clr-blueviolet);
+    box-shadow: 0 0 5px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet),
+    0 0 40px var(--clr-blueviolet),
+    0 0 60px var(--clr-blueviolet)
+    
 }
 
+.about__certimg:hover {
+
+}
 
 .about__certlist {
     padding: 0 0;
