@@ -10,6 +10,9 @@
 .about__title {
     font-size: var(--size-3xl);
     color: var(--clr-slate300);
+    text-shadow: 0 0 5px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet),
+    0 0 40px var(--clr-blueviolet);
 }
 
 .about__wrapper {
@@ -20,6 +23,10 @@
 }
 
 .horizontal__divider {
+    display: none;
+}
+
+.about__description {
     display: none;
 }
 
@@ -41,15 +48,12 @@
 
 .about__img:hover {
     box-shadow: 0 0 5px var(--clr-blueviolet),
-                0 0 20px var(--clr-blueviolet),
-                0 0 40px var(--clr-blueviolet);
+                0 0 20px var(--clr-blueviolet);
 }
 
 .about__subimage {
     display: none;
 }
-
-
 
 .about__content {
     color: var(--clr-slate400);
@@ -73,8 +77,8 @@
     font-weight: 300;
     margin-top: var(--size-sm);
     text-shadow: 0 0 5px var(--clr-blueviolet),
-    0 0 20px var(--clr-blueviolet),
-    0 0 40px var(--clr-blueviolet);
+                 0 0 20px var(--clr-blueviolet),
+                 0 0 40px var(--clr-blueviolet);
 }
 
 .about__subtitle {
@@ -93,9 +97,7 @@
     border: 1px solid var(--clr-blueviolet);
     box-shadow: 0 0 5px var(--clr-blueviolet),
     0 0 20px var(--clr-blueviolet),
-    0 0 40px var(--clr-blueviolet),
-    0 0 60px var(--clr-blueviolet)
-    
+    0 0 30px var(--clr-blueviolet);
 }
 
 .about__certlist {
@@ -260,6 +262,10 @@
     display: block;
 }
 
+.about__description {
+    display: block;
+}
+
 .about__title {
     font-size: var(--size-6xl);
     margin-bottom: var(--size-9xl);
@@ -275,17 +281,22 @@
     width: 25em;
     opacity: 50%;
     cursor: pointer;
-    transition: all 0.3s;
+    /* transition: opacity 0.3s, transform 0.3s, filter 0.3s; */
     padding-left: 2em;
     padding-top: 2em;
-    margin-top: 6rem;
+    margin-top: 5rem;
     border-radius: 2em;
     filter: saturate(40%);
     box-shadow: 0 0 5px var(--clr-blueviolet),
-    0 0 20px var(--clr-blueviolet),
-    0 0 40px var(--clr-blueviolet),
-    0 0 60px var(--clr-blueviolet);
+                0 0 20px var(--clr-blueviolet),
+                0 0 40px var(--clr-blueviolet),
+                0 0 60px var(--clr-blueviolet);
     display: block;
+}
+
+.about__description {
+    color:var(--clr-slate400);
+
 }
 
 .about__subimage:hover {
