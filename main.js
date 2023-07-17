@@ -16,6 +16,20 @@ import './styles/utils.css'
 
 
 
+
+const observer = new IntersectionObserver((entries)=> {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show")
+    } else {
+      entry.target.classList.remove("show")
+    }
+  })
+})
+
+const hiddenEl = document.querySelectorAll(".hidden");
+hiddenEl.forEach((el)=>observer.observe(el));
+
 const headerAboutEL = document.getElementById("header_about");
 const aboutImg = document.querySelector(".about__img");
 
