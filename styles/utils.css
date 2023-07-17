@@ -125,8 +125,17 @@ transition: all 1s;
 .show {
     opacity: 100;
     transform: translateX(0);
-    filter: blur(0px);
+    filter: blur(0px);  
 
+}
+
+.blur {
+    filter: blur(10px);
+    transition: all 1s ease;
+}
+
+.unblur {
+    filter: blur(0px);
 }
 
 

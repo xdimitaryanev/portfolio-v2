@@ -17,6 +17,21 @@ import './styles/utils.css'
 
 
 
+const blurObserver = new IntersectionObserver((entries)=> {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("unblur")
+    } else {
+      entry.target.classList.remove("unblur")
+    }
+  })
+})
+
+const blurredEl = document.querySelectorAll(".blur");
+blurredEl.forEach((el)=>blurObserver.observe(el))
+
+
+
 const observer = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
