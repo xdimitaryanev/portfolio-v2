@@ -16,7 +16,8 @@ import './styles/utils.css'
 
 
 
-
+// unblur on scroll
+const blurredEl = document.querySelectorAll(".hidden-blur");
 const blurObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -27,12 +28,12 @@ const blurObserver = new IntersectionObserver((entries)=> {
   })
 })
 
-const blurredEl = document.querySelectorAll(".blur");
 blurredEl.forEach((el)=>blurObserver.observe(el))
+//
 
-
-
-const observer = new IntersectionObserver((entries)=> {
+// slide from left onscroll
+const hiddenLeftEl = document.querySelectorAll(".hidden-left");
+const hiddenLeftObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
@@ -42,8 +43,25 @@ const observer = new IntersectionObserver((entries)=> {
   })
 })
 
-const hiddenEl = document.querySelectorAll(".hidden");
-hiddenEl.forEach((el)=>observer.observe(el));
+hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
+
+
+const hiddenRightEl = document.querySelectorAll(".hidden-right");
+const hiddenRightObserver = new IntersectionObserver((entries)=> {
+  entries.forEach((entry=> {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show")
+    } else {
+      entry.target.classList.remove("show")
+    }
+  }))
+})
+
+hiddenRightEl.forEach((el)=>hiddenRightObserver.observe(el));
+
+
+
+
 
 const headerAboutEL = document.getElementById("header_about");
 const aboutImg = document.querySelector(".about__img");

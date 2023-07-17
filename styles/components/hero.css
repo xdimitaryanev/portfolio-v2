@@ -50,9 +50,6 @@
     max-width: 60ch;
 
 }
-.hero__wrapper {
-    animation: 1.5s fadeInLeft;
-}
 
 @media (min-width: 475px) {
     .hero__wrapper {

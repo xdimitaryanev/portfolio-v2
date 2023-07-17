@@ -1,5 +1,6 @@
 :root {
 
+    /* COLORS */
     --clr-dark: #2B2730;
     --clr-notsodark: #3e3946;
     --clr-light: #FBFDFF;
@@ -13,6 +14,7 @@
     --clr-slate500: #64748b; 
     --clr-slate200: #e2e8f0;
 
+    /* SIZES */
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
     --size-sm: 0.875rem;
@@ -51,7 +53,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--clr-dark);
-    transition: all 0.3s;
 }
 
 img,

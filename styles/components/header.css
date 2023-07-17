@@ -61,14 +61,6 @@
         width: var(--size-2xl);
         height: var(--size-2xl);
     }
-
-    .logo__text {
-        font-weight: 300;
-    }
-    
-    .logo__text span {
-        font-weight: 400;
-    }
 }
 
 /* 768PX Screens and above */
@@ -89,7 +81,7 @@
         transition: all 0.3s;
     }
     
-    .header__link:hover{
+    .header__link:hover {
         color: var(--clr-yellow);
         text-shadow: 0 0 5px var(--clr-yellow),
         0 0 25px var(--clr-yellow),
@@ -112,9 +104,6 @@
         font-size: var(--size-base);
     }
 
-    .header__link {
-        font-size: var(--size-base);
-    }
 }
 
 /* 1280PX Screens and above */
@@ -124,17 +113,12 @@
     }
 
     .logo__text {
-        font-weight: 200;
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 
     .header__menu {
-    gap: 8em;
-    margin-right: var(--size-5xl);
-    }
-
-    .header__link {
-    font-size: var(--size-base);
+        gap: 8em;
+        margin-right: var(--size-5xl);
     }
 }
 
