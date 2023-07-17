@@ -60,6 +60,20 @@ const hiddenRightObserver = new IntersectionObserver((entries)=> {
 hiddenRightEl.forEach((el)=>hiddenRightObserver.observe(el));
 
 
+const hiddenTopEl = document.querySelectorAll(".hidden-top");
+const hiddenTopObserver = new IntersectionObserver((entries)=> {
+  entries.forEach((entry=> {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show")
+    } else {
+      entry.target.classList.remove("show")
+    }
+  }))
+})
+
+hiddenTopEl.forEach((el)=>hiddenTopObserver.observe(el));
+
+
 
 
 
@@ -81,5 +95,7 @@ headerWorkEl.addEventListener("click", (e)=>{
   workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
 
 })
+
+
 
 

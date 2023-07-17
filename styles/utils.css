@@ -30,6 +30,13 @@
 }
 
 /* ON SCROLL EFFECTS */
+.hidden-top {
+    opacity: 0;
+    transform: translateY(-100%);
+    filter: blur(15px);
+    transition: all 1s;
+}
+
 .hidden-left {
     opacity: 0;
     transform: translateX(-200%);
@@ -47,6 +54,7 @@
 .show {
     opacity: 100;
     transform: translateX(0);
+    transform: translateY(0);
     filter: blur(0px);  
 }
 

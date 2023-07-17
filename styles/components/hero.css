@@ -51,6 +51,7 @@
     .hero {
         height: 20rem;
     }
+    
     .hero__title {
         font-size: var(--size-4xl);
     }
@@ -58,14 +59,11 @@
     .hero__subtitle {
         margin-top: var(--size-3xl);
         font-size: var(--size-xl);
-
     }
 
     .hero__description {
         font-size: var(--size-base);
-
     }
-
 
     .hero__btn {
         margin-top: 1em;
@@ -78,36 +76,36 @@
 }
     
 @media (min-width: 768px) {
-        .hero {
-            height: 23rem;
-        }
-        .hero__title {
-            font-size: var(--size-5xl);
+    .hero {
+        height: 23rem;
+    }
+    .hero__title {
+        font-size: var(--size-5xl);
+    }
+        
+    .hero__subtitle {
+        margin-top: var(--size-4xl);
+        font-size: var(--size-2xl);
+    }
+        
+    .hero__description {
+        font-size: var(--size-lg);
+        margin-top: 0.2em;
+    }
+    .hero__btn {
+        margin-top: var(--size-base);
+        font-size: var(--size-sm);
         }
         
-        .hero__subtitle {
-            margin-top: var(--size-4xl);
-            font-size: var(--size-2xl);
-        }
-        
-        .hero__description {
-            font-size: var(--size-lg);
-            margin-top: 0.2em;
-        }
-        .hero__btn {
-            margin-top: var(--size-base);
-            font-size: var(--size-sm);
-        }
-        
-        .hero__content {
-            font-size: var(--size-base);
+    .hero__content {
+        font-size: var(--size-base);
         }
 }
 
 @media (min-width: 1024px) {
     .hero {
         height: 27rem;
-       }
+    }
 
     .hero__title {
         font-size: var(--size-6xl);
@@ -164,10 +162,7 @@
     .hero__content {
         font-size: var(--size-xl);
         max-width: 50ch;
-    
     }
-
-
 }
 
 
@@ -175,11 +170,12 @@
 @media (min-width: 1536px) {
     .hero {
         height: 34rem;
-       }
+    }
     
     .hero__wrapper {
         margin-left: var(--size-4xl);
-       }
+    }
+
     .hero__title {
         font-size: var(--size-8xl);
     }
