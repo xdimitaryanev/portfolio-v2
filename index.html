@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
     <header class="header container">
@@ -35,13 +34,11 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            fill="currentColor"
-          >
+            fill="currentColor">
             <path
               fill-rule="evenodd"
               d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd"
-            />
+              clip-rule="evenodd" />
           </svg>
         </button>
       </nav>
@@ -82,27 +79,22 @@
             </ul>
             <h2 class="about__subtitle hidden-left">Certificates:</h2>
             <img
-              class="about__certimg hidden-left"
+              class="about__certimg hidden-blur"
               src="certificate.png"
-              alt=""
-            />
+              alt />
             <ul class="about__certlist">
               <li>
                 <a
                   class="hidden-blur"
                   href="https://softuni.bg/certificates/details/146183/a0a7ba6e"
-                  target="_blank"
-                  >Programming Basics with Java - September 2022</a
-                >
+                  target="_blank">Programming Basics with Java - September 2022</a>
               </li>
               <li>
                 <a
                   class="hidden-blur"
                   href="https://softuni.bg/certificates/details/166028/776f7eaf"
-                  target="_blank"
-                >
-                  Programming Fundamentals with JS - January 2023</a
-                >
+                  target="_blank">
+                  Programming Fundamentals with JS - January 2023</a>
               </li>
             </ul>
           </div>
@@ -111,41 +103,87 @@
             <h2 class="about__description hidden-right">
               Lorem ipsum dolor sit amet.
             </h2>
-            <img class="about__subimage hidden-blur" src="hero1.png" alt="" />
+            <img class="about__subimage hidden-blur" src="hero1.png" alt />
           </div>
         </div>
       </section>
       <section class="divider container section"></section>
 
       <section class="work container section">
-        <h2 class="work__title">WORK</h2>
-        <ul class="work__list">
-          <li>
-            <a
+        <h2 class="work__title hidden-top">Work</h2>
+        <div class="work__wrapper container">
+          <div class="work__element bj">
+            <h3>Black Jack Game</h3>
+            <a class="hidden-left"
               href="https://github.com/xdimitaryanev/myBlackJackGame"
-              target="_blank"
-            >
-              Black Jack Game
+              target="_blank">
+              <img class="work__img" src="bj.png" alt />
             </a>
-            <img class="work__img" src="bj.png" alt />
-          </li>
-          <li>
-            <a href="https://github.com/xdimitaryanev/To-do" target="_blank">
-              To-do List</a
-            >
-            <img class="work__img" src="icon.png" alt />
-          </li>
-          <li>
-            <a
+
+            <p>In this project, I designed and developed an engaging web-based
+              Blackjack game using
+              JavaScript, CSS, and HTML. Through this endeavor, I honed my
+              programming skills and
+              gained a deep understanding of game mechanics and logic.
+              Implementing features such
+              as player interactions, dealer behavior, and card calculations
+              challenged me to
+              think critically and creatively. The project allowed me to
+              demonstrate my ability
+              to create interactive and entertaining experiences while
+              practicing clean code and
+              efficient algorithms.</p>
+          </div>
+          <section class="horizontal__divider"></section>
+          <div class="work__element"> 
+            <h3>To-do List</h3>
+            <a class="hidden-left"
+              href="https://github.com/xdimitaryanev/To-do"
+              target="_blank">
+              <img class="work__img" src="icon.png" alt />
+            </a>
+
+            <p>For this project, I created a practical and intuitive To-Do List
+              application using
+              JavaScript, CSS, and HTML. The main objective was to design a
+              user-friendly interface
+              with smooth functionality, allowing users to efficiently manage
+              their tasks. While
+              developing the application, I explored various techniques for
+              handling data,
+              manipulating the DOM, and improving user experience. This project
+              significantly
+              improved my front-end development skills and enabled me to
+              showcase my proficiency
+              in creating responsive and user-centric web applications.
+            </p>
+
+          </div>
+          <section class="horizontal__divider"></section>
+          <div class="work__element"> <h3>Portfolio Site</h3>
+            <a class="hidden-left"
               href="https://github.com/xdimitaryanev/portfolio-v2"
-              target="_blank"
-            >
-              Portfolio Site</a
-            >
-            <img class="work__img" src="portfolio.png" alt />
-          </li>
-        </ul>
-        <p class="work__content">
+              target="_blank"> <img class="work__img" src="portfolio.png" alt />
+            </a>
+
+            <p>Building my own personal portfolio site was an incredible
+              learning experience.
+              Using JavaScript, HTML, CSS, and CSS Flexbox, I designed a
+              visually appealing and responsive site
+              that showcases my projects and skills. Implementing a responsive
+              design approach ensured that the
+              site adapts seamlessly across different devices and screen sizes.
+              Through this project, I not
+              only improved my web development abilities but also gained
+              valuable experience in presenting my
+              work in a professional and aesthetically pleasing manner. This
+              portfolio site has become a platform
+              for me to display my achievements, creativity, and dedication to
+              the field of web development.</p>
+          </div>
+        </div>
+
+        <p class="work__content hidden-blur">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
           necessitatibus!
         </p>
@@ -167,8 +205,7 @@
         <a
           class="contact__btn btn__fancy"
           href="mailto:xdimitaryanev@gmail.com"
-          target="_blank"
-        >
+          target="_blank">
           Reach out
         </a>
       </section>

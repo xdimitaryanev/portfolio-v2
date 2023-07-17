@@ -88,7 +88,7 @@ headerAboutEL.addEventListener("click", (e)=>{
 
 
 const headerWorkEl = document.getElementById("header_work");
-const workTitleEl = document.querySelector(".work__title");
+const workTitleEl = document.querySelector(".work__wrapper");
 
 headerWorkEl.addEventListener("click", (e)=>{
   e.preventDefault()

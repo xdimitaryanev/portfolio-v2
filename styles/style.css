@@ -9,9 +9,9 @@
     --clr-blueviolet: #8F43EE;
     --clr-mango: #FFBE0B;
     --clr-slate700: #334155;
+    --clr-slate500: #64748b; 
     --clr-slate400: #94a3b8;
     --clr-slate300: #cbd5e1;
-    --clr-slate500: #64748b; 
     --clr-slate200: #e2e8f0;
 
     /* SIZES */
@@ -53,6 +53,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--clr-dark);
+    overflow-x: hidden;
 }
 
 img,
@@ -103,4 +104,7 @@ strong {
                 0 0 25px var(--clr-wintersky),
                 0 0 50px var(--clr-wintersky)               
 }
+
+
+
 
