@@ -136,10 +136,16 @@
 
 
 /* DIVIDERS */
-.divider {
+.section-divider {
     border: 1px solid var(--clr-blueviolet);
+    width: 65%;  
+    opacity: 20%;
+    }
+
+.divider {
+    border: 1px solid var(--clr-slate700);
     width: 50%;  
-    opacity: 10%;
+    opacity: 15%;
     }
 
 .horizontal__divider {
