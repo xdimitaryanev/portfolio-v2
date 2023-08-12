@@ -99,6 +99,11 @@
         gap: 5em;
     }
 
+    .header__link {
+        font-size: var(--size-base);
+        transition: all 0.3s;
+    }
+
     .logo__text {
         font-size: var(--size-base);
     }
@@ -112,7 +117,7 @@
     }
 
     .logo__text {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
     }
 
     .header__menu {

@@ -22,10 +22,15 @@ const blurObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("unblur")
+      blurObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("unblur")
     }
   })
+}, {
+  
+},{
+  threshold: 1,
 })
 
 blurredEl.forEach((el)=>blurObserver.observe(el))
@@ -37,10 +42,13 @@ const hiddenLeftObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
+      hiddenLeftObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("show")
     }
   })
+},{
+  threshold: 1,
 })
 
 hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
@@ -51,6 +59,7 @@ const hiddenRightObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry=> {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
+      hiddenRightObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("show")
     }
@@ -65,10 +74,13 @@ const hiddenTopObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry=> {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
+      hiddenTopObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("show")
     }
   }))
+},{
+  threshold: 1,
 })
 
 hiddenTopEl.forEach((el)=>hiddenTopObserver.observe(el));
