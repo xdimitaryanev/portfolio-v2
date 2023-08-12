@@ -17,7 +17,6 @@
     border-radius: 50%;
     margin-bottom: var(--size-lg);
     margin-top: var(--size-6xl);
-    border-radius: 50%;
     border: 3px solid var(--clr-blueviolet);
 }
 
@@ -28,8 +27,6 @@
 
 .about__content {
     color: var(--clr-slate400);
-    margin-left: var(--size-xs);
-    margin-right: var(--size-xs);
     font-size: var(--size-base);
     text-align: center;
     font-weight: 400;
@@ -81,8 +78,6 @@
 .about__certlist {
     padding: 0 0;
     text-align: center;
-    margin-left: var(--size-sm);
-    margin-right: var(--size-sm);
 }
 
  .about__certlist a {
@@ -118,33 +113,243 @@
 
 
   @media (min-width: 375px) {
+
     .about__certlist a {
         font-size: var(--size-xs);
+    }
+  }
+  
+  @media (min-width: 475px) {
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .about__techlist {
+        font-size: var(--size-lg);  
+    }
+    
+    .about h3 a {
+        font-size: var(--size-lg);
     }
 
   }
   
-  @media (min-width: 475px) {
-    
-  
-  }
-  
   @media (min-width: 640px) {
+
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .about__img {
+        height: 5.5rem;
+        margin-bottom: var(--size-2xl);
+        margin-top: var(--size-6xl);
+    }
+     
+    .about__content {
+        font-size: var(--size-base);
+        max-width: 50ch;
+    }
+    
+    .about__techlist {
+        gap: 1.5em;
+        font-size: var(--size-xl);
+        margin-top: var(--size-xl);   
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-3xl);
+        margin-bottom: var(--size-3xl);
+    }
+    
+    .about__certimg {
+        margin: var(--size-2xl);
+    }
+    
+    .about h3 a {
+        font-size: var(--size-xl);
+    }
+      
+    .about__certlist a {
+        font-size: var(--size-sm);
+      }  
   
   }
    
   @media (min-width: 768px) {
-  
+
+    .about__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .about__img {
+        height: 6rem;
+        margin-bottom: var(--size-3xl);
+        margin-top: var(--size-7xl);
+    }
+     
+    .about__content {
+        font-size: var(--size-lg);
+        max-width: 50ch;
+    }
+    
+    .about__techlist {
+        gap: 1.5em;
+        font-size: var(--size-2xl);
+        margin-top: var(--size-2xl);   
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-3xl);
+        margin-bottom: var(--size-3xl);
+    }
+    
+    .about__certimg {
+        width: 5em;
+        margin: var(--size-3xl);
+    }
+    
+    .about h3 a {
+        font-size: var(--size-2xl);
+    }
+      
+    .about__certlist a {
+        font-size: var(--size-base);
+      }  
   }
   
   @media (min-width: 1024px) {
+
+    .about__title {
+        font-size: var(--size-6xl);
+    }
+    
+    .about__img {
+        height: 6.5rem;
+        margin-bottom: var(--size-3xl);
+        margin-top: var(--size-7xl);
+    }
+     
+    .about__content {
+        font-size: var(--size-xl);
+        max-width: 53ch;
+    }
+    
+    .about__techlist {
+        gap: 2.5em;
+        font-size: var(--size-2xl);
+        margin-top: var(--size-4xl);   
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-4xl);
+        margin-bottom: var(--size-3xl);
+    }
+    
+    .about__certimg {
+        width: 5em;
+        margin: var(--size-4xl);
+    }
+    
+    .about h3 a {
+        font-size: var(--size-2xl);
+    }
+      
+    .about__certlist a {
+        font-size: var(--size-lg);
+        line-height: 2em;
+      }  
   
   }
   
   @media (min-width: 1280px) {
-  
+
+    .about__title {
+        font-size: var(--size-6xl);
+    }
+    
+    .about__img {
+        height: 6.5rem;
+        margin-bottom: var(--size-4xl);
+        margin-top: var(--size-8xl);
+    }
+     
+    .about__content {
+        font-size: var(--size-xl);
+        max-width: 53ch;
+    }
+    
+    .about__techlist {
+        gap: 2em;
+        font-size: var(--size-2xl);
+        margin-top: var(--size-5xl);   
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-4xl);
+        margin-bottom: var(--size-3xl);
+    }
+    
+    .about__certimg {
+        width: 6em;
+        margin: var(--size-5xl);
+    }
+    
+    .about h3 a {
+        font-size: var(--size-2xl);
+    }
+      
+    .about__certlist a {
+        font-size: var(--size-lg);
+        line-height: 2em;
+      }  
   }
   
   @media (min-width: 1536px) {
+
+    .about__title {
+        font-size: var(--size-7xl);
+    }
+    
+    .about__img {
+        height: 7.5rem;
+        margin-bottom: var(--size-5xl);
+        margin-top: var(--size-9xl);
+    }
+     
+    .about__content {
+        font-size: var(--size-2xl);
+        max-width: 53ch;
+    }
+    
+    .about__techlist {
+        gap: 3em;
+        font-size: var(--size-3xl);
+        margin-top: var(--size-6xl);   
+    }
+    
+    .about__subtitle {
+        font-size: var(--size-5xl);
+        margin-bottom: var(--size-3xl);
+    }
+    
+    .about__certimg {
+        width: 6em;
+        margin: var(--size-5xl);
+    }
+    
+    .about h3 a {
+        font-size: var(--size-3xl);
+    }
+    
+    .about__certlist {
+        margin-top: .5em;
+    }
+    
+    .about__certlist a {
+        font-size: var(--size-2xl);
+        line-height: 2em;
+      }  
+  }
   
-  } 
