@@ -47,36 +47,66 @@ hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
 
 
 
-const headerAboutEL = document.getElementById("header_about");
+const headerAboutEL = document.querySelectorAll(".header_about");
 const aboutImg = document.querySelector("#about");
 
-headerAboutEL.addEventListener("click", (e)=>{
+headerAboutEL.forEach(element => {
+  element.
+  addEventListener("click", (e)=>{
   e.preventDefault()
   aboutImg.scrollIntoView({ behavior: "smooth",inline: "nearest" });
+  mobileMenuEl.style.display = "none";
+  document.body.style.overflow = "";
 })
+  
+});
 
 
 
-const headerWorkEl = document.getElementById("header_work");
+
+const headerWorkEl = document.querySelectorAll(".header_work");
 const workTitleEl = document.querySelector("#work");
+headerWorkEl.forEach(element => {
+  element.addEventListener("click", (e)=>{
+    e.preventDefault()
+    workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
+    mobileMenuEl.style.display = "none";
+    document.body.style.overflow = "";
+  
+  })
+  
+});
 
-headerWorkEl.addEventListener("click", (e)=>{
-  e.preventDefault()
-  workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
 
-})
-
-const headerContactEl = document.getElementById("header_contact");
+const headerContactEl = document.querySelectorAll(".header_contact");
 const contactTitleEl = document.querySelector("#contact");
+headerContactEl.forEach(element => {
+  
+  element.addEventListener("click", (e)=>{
+    e.preventDefault()
+    contactTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
+    mobileMenuEl.style.display = "none";
+    document.body.style.overflow = "";
+  
+  })
+});
 
-headerContactEl.addEventListener("click", (e)=>{
-  e.preventDefault()
-  contactTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
 
+const barsEl = document.querySelector(".header__bars");
+const xEl = document.querySelector(".mobile__x");
+const mobileMenuEl = document.querySelector(".mobile__menu")
+let isMobileMenuOpen = false;
+xEl.addEventListener("click", (e) => {
+  mobileMenuEl.style.display = "none";
+  isMobileMenuOpen = false;
+  document.body.style.overflow = "";
 })
 
-
-
+barsEl.addEventListener("click", (e) => {
+  document.body.style.overflow = "hidden";
+  isMobileMenuOpen = true;
+  mobileMenuEl.style.display = "flex";
+})
 
 
 

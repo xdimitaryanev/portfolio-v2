@@ -15,6 +15,69 @@
     display: none;
 }
 
+.mobile__menu {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    background-color: var(--clr-dark);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 0;
+    text-align: center;
+}
+
+.mobile__menu svg {
+    height: 1.5em;
+    position: absolute;
+    top: 1.4em;
+    right: 1.6em;
+    color: var(--clr-wintersky);
+    opacity: 90%;
+}
+
+.mobile__menu a {
+    font-size: var(--size-4xl);
+    color: var(--clr-slate400);
+    opacity: 90%;
+}
+
+.mobile__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+    gap: 1em;
+}
+
+.mobile__resume {
+    text-transform: uppercase;
+    background-color: var(--clr-blueviolet);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    width: 7em;
+    border-radius: 1em;
+    box-shadow: 0 0 5px var(--clr-blueviolet);
+}
+
+.mobile__github {
+    text-transform: uppercase;
+    background-color: var(--clr-wintersky);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    width: 7em;
+    border-radius: 1em;
+    box-shadow: 0 0 5px var(--clr-wintersky);
+}
+
+.mobile__menu button a {
+    font-size: var(--size-lg);
+    color: var(--clr-light);
+}
+
 .header__bars {
     color: var(--clr-dark);
     width: var(--size-xl);

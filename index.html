@@ -22,13 +22,13 @@
       <nav>
         <ul class="header__menu">
           <li>
-            <a class="header__link" id="header_contact" href>CONTACT</a>
+            <a class="header__link header_contact">CONTACT</a>
           </li>
           <li>
-            <a class="header__link" id="header_about" href>ABOUT</a>
+            <a class="header__link header_about">ABOUT</a>
           </li>
           <li>
-            <a class="header__link" id="header_work" href>WORK</a>
+            <a class="header__link header_work">WORK</a>
           </li>
         </ul>
         <button class="header__bars">
@@ -45,7 +45,32 @@
           </svg>
         </button>
       </nav>
+
+      <nav class="mobile__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mobile__x">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>        
+        <ul class="mobile__nav hidden-blur">
+          <li>
+            <a class="header_contact">&lt; CONTACT /&gt;</a>
+          </li>
+          <li>
+            <a class="header_about">&lt; ABOUT /&gt;</a>
+          </li>
+          <li>
+            <a class="header_work">&lt; WORK /&gt;</a>
+          </li>
+        </ul>
+        <div class="divider hidden-blur"></div>
+        <button class="hidden-blur mobile__github"><a 
+          target="_blank"
+          href="https://github.com/xdimitaryanev">GitHub</a></button>
+        <button class="hidden-blur mobile__resume"><a 
+          target="_blank"
+          href="Dimitar-Resume.pdf">Resume</a></button>
+      </nav>
     </header>
+    
     <main>
       <section class="hero container section">
         <div class="hero__text__wrapper">
