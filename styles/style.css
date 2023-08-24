@@ -79,11 +79,12 @@ strong {
 }
 
 .btn__fancy {
-    border-radius: 5px;
     border-radius: 7px;
+    width: 6em;
     font-weight: 400;
     text-transform: uppercase;
     transition: all 0.5s;
+    font-size: var(--size-base);
     background: var(--clr-wintersky);
     box-shadow: 0 0 5px var(--clr-wintersky);
 }
