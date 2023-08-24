@@ -8,14 +8,6 @@ import './styles/components/work.css'
 import './styles/components/contact.css'
 import './styles/utils.css'
 
-// window.addEventListener("scroll", rotateSvg);
-// function rotateSvg () {
-//   const rotationAngle = window.scrollY * 0.2;
-//   logoEl.style.transform = `rotate(${rotationAngle}deg)`;
-// }
-
-
-
 // unblur on scroll
 const blurredEl = document.querySelectorAll(".hidden-blur");
 const blurObserver = new IntersectionObserver((entries)=> {
@@ -32,9 +24,8 @@ const blurObserver = new IntersectionObserver((entries)=> {
 },{
   threshold: 1,
 })
-
 blurredEl.forEach((el)=>blurObserver.observe(el))
-//
+
 
 // slide from left onscroll
 const hiddenLeftEl = document.querySelectorAll(".hidden-left");
@@ -54,43 +45,10 @@ const hiddenLeftObserver = new IntersectionObserver((entries)=> {
 hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
 
 
-const hiddenRightEl = document.querySelectorAll(".hidden-right");
-const hiddenRightObserver = new IntersectionObserver((entries)=> {
-  entries.forEach((entry=> {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show")
-      hiddenRightObserver.unobserve(entry.target)
-    } else {
-      entry.target.classList.remove("show")
-    }
-  }))
-})
-
-hiddenRightEl.forEach((el)=>hiddenRightObserver.observe(el));
-
-
-const hiddenTopEl = document.querySelectorAll(".hidden-top");
-const hiddenTopObserver = new IntersectionObserver((entries)=> {
-  entries.forEach((entry=> {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show")
-      hiddenTopObserver.unobserve(entry.target)
-    } else {
-      entry.target.classList.remove("show")
-    }
-  }))
-},{
-  threshold: 1,
-})
-
-hiddenTopEl.forEach((el)=>hiddenTopObserver.observe(el));
-
-
-
 
 
 const headerAboutEL = document.getElementById("header_about");
-const aboutImg = document.querySelector(".about__img");
+const aboutImg = document.querySelector(".about__title");
 
 headerAboutEL.addEventListener("click", (e)=>{
   e.preventDefault()
@@ -100,13 +58,14 @@ headerAboutEL.addEventListener("click", (e)=>{
 
 
 const headerWorkEl = document.getElementById("header_work");
-const workTitleEl = document.querySelector(".work__wrapper");
+const workTitleEl = document.querySelector(".work");
 
 headerWorkEl.addEventListener("click", (e)=>{
   e.preventDefault()
   workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
 
 })
+
 
 
 
