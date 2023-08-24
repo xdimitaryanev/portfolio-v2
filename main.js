@@ -8,13 +8,33 @@ import './styles/components/work.css'
 import './styles/components/contact.css'
 import './styles/utils.css'
 
+// mobile blur
+const mobileEl = document.querySelectorAll(".hidden");
+const mobileObserver = new IntersectionObserver((entries)=> {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("unblur")
+    } else {
+      entry.target.classList.remove("unblur")
+    }
+  })
+}, {
+  
+},{
+  threshold: 1,
+})
+mobileEl.forEach((el)=>mobileObserver.observe(el))
+
+
+
+
 // unblur on scroll
 const blurredEl = document.querySelectorAll(".hidden-blur");
 const blurObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("unblur")
-      // blurObserver.unobserve(entry.target)
+      blurObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("unblur")
     }
@@ -33,7 +53,7 @@ const hiddenLeftObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
-      // hiddenLeftObserver.unobserve(entry.target)
+      hiddenLeftObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("show")
     }

@@ -141,6 +141,7 @@
     .header__link {
         font-size: var(--size-sm);
         transition: all 0.3s;
+        color: var(--clr-dark)
     }
 
     .header__link:hover {

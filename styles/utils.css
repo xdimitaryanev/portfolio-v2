@@ -48,6 +48,11 @@
     transition: all 1s ease;
 }
 
+.hidden {
+    filter: blur(20px);
+    transition: all .5s ease-out;
+}
+
 .unblur {
     filter: blur(0px);
 }
