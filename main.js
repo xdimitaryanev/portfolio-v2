@@ -48,7 +48,7 @@ hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
 
 
 const headerAboutEL = document.getElementById("header_about");
-const aboutImg = document.querySelector(".about__title");
+const aboutImg = document.querySelector("#about");
 
 headerAboutEL.addEventListener("click", (e)=>{
   e.preventDefault()
@@ -58,13 +58,23 @@ headerAboutEL.addEventListener("click", (e)=>{
 
 
 const headerWorkEl = document.getElementById("header_work");
-const workTitleEl = document.querySelector(".work");
+const workTitleEl = document.querySelector("#work");
 
 headerWorkEl.addEventListener("click", (e)=>{
   e.preventDefault()
   workTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
 
 })
+
+const headerContactEl = document.getElementById("header_contact");
+const contactTitleEl = document.querySelector("#contact");
+
+headerContactEl.addEventListener("click", (e)=>{
+  e.preventDefault()
+  contactTitleEl.scrollIntoView({ behavior: "smooth", inline: "start" });
+
+})
+
 
 
 

@@ -46,6 +46,11 @@
         letter-spacing: 0.1em;
     }
 
+    .hero__btn a {
+        color: var(--clr-light);
+        
+    }
+
 @media (min-width: 475px) {
 
     .hero {
