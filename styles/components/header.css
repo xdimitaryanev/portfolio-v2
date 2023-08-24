@@ -39,10 +39,10 @@
     opacity: 90%;
 }
 
-.mobile__menu a {
+.header__contact, .header__about, .header__work {
     font-size: var(--size-4xl);
     color: var(--clr-slate400);
-    opacity: 90%;
+    cursor: pointer;
 }
 
 .mobile__nav {
@@ -61,6 +61,8 @@
     width: 7em;
     border-radius: 1em;
     box-shadow: 0 0 5px var(--clr-blueviolet);
+    font-size: var(--size-base);
+    color: var(--clr-light);
 }
 
 .mobile__github {
@@ -71,12 +73,10 @@
     width: 7em;
     border-radius: 1em;
     box-shadow: 0 0 5px var(--clr-wintersky);
-}
-
-.mobile__menu button a {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
     color: var(--clr-light);
 }
+
 
 .header__bars {
     color: var(--clr-dark);

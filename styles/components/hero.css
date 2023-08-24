@@ -37,16 +37,13 @@
         color: var(--clr-slate400);
         font-size: var(--size-xs);
         max-width: 36ch;
+        margin-bottom: 1em;
     }
     
     .hero__btn {
-        margin-top: var(--size-xxs);
         font-size: var(--size-xs);
         padding: 0.6em 0.8em;
         letter-spacing: 0.1em;
-    }
-
-    .hero__btn a {
         color: var(--clr-light);
     }
 

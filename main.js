@@ -67,7 +67,7 @@ hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
 
 
 
-const headerAboutEL = document.querySelectorAll(".header_about");
+const headerAboutEL = document.querySelectorAll(".header__about");
 const aboutImg = document.querySelector("#about");
 
 headerAboutEL.forEach(element => {
@@ -84,7 +84,7 @@ headerAboutEL.forEach(element => {
 
 
 
-const headerWorkEl = document.querySelectorAll(".header_work");
+const headerWorkEl = document.querySelectorAll(".header__work");
 const workTitleEl = document.querySelector("#work");
 headerWorkEl.forEach(element => {
   element.addEventListener("click", (e)=>{
@@ -98,7 +98,7 @@ headerWorkEl.forEach(element => {
 });
 
 
-const headerContactEl = document.querySelectorAll(".header_contact");
+const headerContactEl = document.querySelectorAll(".header__contact");
 const contactTitleEl = document.querySelector("#contact");
 headerContactEl.forEach(element => {
   
