@@ -92,13 +92,10 @@ strong {
     text-transform: uppercase;
     transition: all 0.5s;
     transition-property: box-shadow;
-}
-  
-.btn__fancy {
     background: var(--clr-wintersky);
     box-shadow: 0 0 25px var(--clr-wintersky);
 }
-  
+    
 .btn__fancy:hover {
     box-shadow: 0 0 5px var(--clr-wintersky),
                 0 0 25px var(--clr-wintersky),

@@ -22,7 +22,7 @@ const blurObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("unblur")
-      blurObserver.unobserve(entry.target)
+      // blurObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("unblur")
     }
@@ -42,7 +42,7 @@ const hiddenLeftObserver = new IntersectionObserver((entries)=> {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show")
-      hiddenLeftObserver.unobserve(entry.target)
+      // hiddenLeftObserver.unobserve(entry.target)
     } else {
       entry.target.classList.remove("show")
     }

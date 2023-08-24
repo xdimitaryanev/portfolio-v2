@@ -121,10 +121,12 @@
     }
 
     .header__menu {
-        gap: 8em;
+        gap: 6em;
         margin-right: var(--size-5xl);
     }
 }
 
 /* 1536PX Screens and above */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+    
+}
