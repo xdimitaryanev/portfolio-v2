@@ -18,7 +18,7 @@
         font-size: var(--size-base);
         font-weight: 600;
         line-height: 1em;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.1rem;
     }
     
     .hero__title {
@@ -42,7 +42,7 @@
     
     .hero__btn {
         font-size: var(--size-xs);
-        padding: 0.6em 0.8em;
+        padding: 0.4em 0.8em;
         letter-spacing: 0.1em;
         color: var(--clr-light);
     }

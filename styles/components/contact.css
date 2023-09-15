@@ -3,5 +3,112 @@
     flex-direction: column;    
     justify-content: center;
     align-items: center;
+    margin-bottom: 4em;
 }
+
+.contact__content {
+    color: var(--clr-slate400);
+    max-width: 55ch;
+    text-align: center;
+    margin: 3em;
+    font-size: var(--size-xl);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 80%;
+    color: var(--clr-slate500);
+    border: 1px solid rgba(115, 84, 240, 0.280);
+    padding: 3em;
+    justify-content: center;
+    font-size: var(--size-lg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all .5s ease;
+    margin-bottom: 2em;
+}
+
+form input {
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+    border: 1px solid rgba(115, 84, 240, 0.280);
+    padding: .7em;
+    color: var(--clr-slate200);
+    font-size: var(--size-base);
+    transition: border .5s ease;
+}
+
+form textarea {
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+    border: 1px solid rgba(115, 84, 240, 0.280);
+    padding: .7em;
+    color: var(--clr-slate200);
+    font-size: var(--size-base);
+    resize: none;
+}
+
+form h4 {
+    align-self: center;
+    font-size: var(--size-3xl);
+    margin: .5em;
+}
+
+form button {
+    align-self: center;
+    margin: 1em;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--clr-slate200);
+  -webkit-box-shadow: 0 0 0px 40rem var(--clr-dark) inset;
+}
+
+
+input:focus {
+    border: 1px solid rgb(115, 84, 240);
+  }
+
+  form textarea:focus {
+    border: 1px solid rgb(115, 84, 240);
+}
+
+.contact__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+
+}
+
+
+.contact__socials ul {
+    padding: 0 0;
+    display: flex;
+    gap: 3em;
+}
+
+.fa {
+    color: var(--clr-slate500);
+    font-size: var(--size-5xl);
+    transition: all .4s ease-in;
+
+}
+
+.fa:hover {
+    text-shadow:
+    0 0 10px var(--clr-blueviolet),
+    0 0 25px var(--clr-blueviolet);
+
+}
+
+
+
 

@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header container">
@@ -47,50 +51,77 @@
       </nav>
 
       <nav class="mobile__menu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mobile__x">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>        
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mobile__x"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
         <ul class="mobile__nav hidden">
           <li>
-            <a class="header__contact">&lt; CONTACT /&gt;</a>
+            <a class="header__contact">CONTACT</a>
           </li>
           <li>
-            <a class="header__about">&lt; ABOUT /&gt;</a>
+            <a class="header__about">ABOUT</a>
           </li>
           <li>
-            <a class="header__work">&lt; WORK /&gt;</a>
+            <a class="header__work">WORK</a>
           </li>
         </ul>
         <div class="divider hidden"></div>
-        <a class="hidden mobile__github"
+        <a
+          class="hidden mobile__github"
           target="_blank"
-          href="https://github.com/xdimitaryanev">GitHub</a>
-        <a class="hidden mobile__resume"
+          href="https://github.com/xdimitaryanev"
+          >GitHub</a
+        >
+        <a
+          class="hidden mobile__resume"
           target="_blank"
-          href="Dimitar-Resume.pdf">Resume</a>
+          href="Dimitar-Resume.pdf"
+          >Resume</a
+        >
       </nav>
     </header>
-    
+
     <main>
       <section class="hero container section">
         <div class="hero__text__wrapper">
           <h2 class="hero__subtitle">Hi,<br />I'm Dimitar,</h2>
-          <h1 class="hero__title">
+          <h1  class="hero__title">
             WEB <br />
             DEVELOPER
           </h1>
-          <h2 class="hero__description">&lt; Font-end /&gt;</h2>
+
           <p class="hero__content">
-            A driven and eager <strong>JavaScript</strong> enthusiast with a
+            A driven and eager <strong>JavaScript</strong> developer with a
             thirst for knowledge and a genuine <strong>passion</strong>
             for coding.
           </p>
-          <button  ><a class="btn__fancy hero__btn"
-            target="_blank"
-            href="https://github.com/xdimitaryanev">GitHub</a></button>
-          <button ><a class="btn__fancy hero__btn resume__btn"
-            target="_blank"
-            href="Dimitar-Resume.pdf">Resume</a></button>
+          <button>
+            <a
+              class="btn__fancy hero__btn"
+              target="_blank"
+              href="https://github.com/xdimitaryanev"
+              >GitHub</a
+            >
+          </button>
+          <button>
+            <a
+              class="btn__fancy hero__btn resume__btn"
+              target="_blank"
+              href="Dimitar-Resume.pdf"
+              >Resume</a
+            >
+          </button>
         </div>
       </section>
       <section class="section-divider container section"></section>
@@ -108,6 +139,7 @@
           <li class="hidden-left">JS</li>
           <li class="hidden-left">CSS</li>
           <li class="hidden-left">HTML</li>
+          <li class="hidden-left">React JS</li>
         </ul>
         <div class="container divider"></div>
         <h2 class="about__subtitle hidden-left">Certificates:</h2>
@@ -139,52 +171,106 @@
       <section class="work container section">
         <h2 id="work" class="title hidden-blur">Work</h2>
         <div class="work__grid">
-          <!-- <div class="grid__element hidden-blur">
+          <div class="grid__element hidden-blur">
             <h3>BlackJack Game</h3>
             <img src="bj.png" alt="" />
             <div class="buttons__wrapper">
-              <button class="btn__action"><a href="https://my-black-jack-game.vercel.app/" target="_blank">Play</a></button>
-              <button class="btn__code"><a href="https://github.com/xdimitaryanev/myBlackJackGame" target="_blank">Code</a></button>
+              <button class="btn__action">
+                <a
+                  href="https://my-black-jack-game-x8au.vercel.app/"
+                  target="_blank"
+                  >Try</a
+                >
+              </button>
+              <button class="btn__code">
+                <a
+                  href="https://github.com/xdimitaryanev/myBlackJackGame"
+                  target="_blank"
+                  >Code</a
+                >
+              </button>
             </div>
             <p>
               In this project, I designed and developed an engaging web-based
               Blackjack game using JavaScript, CSS, and HTML. Through this
               endeavor, I honed my programming skills and gained a deep
-              understanding of game mechanics and logic.
+              understanding of game logic.
             </p>
-          </div> -->
+          </div>
 
           <div class="grid__element hidden-blur">
             <h3>Product Listing Page</h3>
             <img src="plp.png" alt="" />
             <div class="buttons__wrapper">
-              <a class="btn__action" href="https://product-listing-page-nine.vercel.app/" target="_blank">try</a>
-              <a class="btn__code" href="https://github.com/xdimitaryanev/product-listing-page/tree/deploy" target="_blank">Code</a>
+              <a
+                class="btn__action"
+                href="https://product-listing-page-nine.vercel.app/"
+                target="_blank"
+                >try</a
+              >
+              <a
+                class="btn__code"
+                href="https://github.com/xdimitaryanev/product-listing-page/tree/deploy"
+                target="_blank"
+                >Code</a
+              >
             </div>
             <p>
-              In this project, I successfully developed a responsive and
-              user-friendly product listing page using Vanilla JavaScript, CSS, HTML and Vite.
-              The page dynamically rendered product data from a JSON file,
-              allowing users to explore various products with sorting and
-              filtering options for easy organization.
+              In this project, I developed a responsive and user-friendly
+              product listing page using Vanilla JavaScript, CSS and HTML. The
+              page dynamically rendered product data from a JSON file, allowing
+              users to explore various products with sorting and filtering
+              options for easy organization.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="divider container section"></section>
+      <section class="section-divider container section"></section>
       <section class="contact container section">
         <h2 id="contact" class="title hidden-blur">Contact</h2>
-        <p class="contact_content">
-UNDER CONSTRUCTION
+        <p class="contact__content">
+          If you have a project in mind, a question, or just want to say hello,
+          feel free to reach out to me.
         </p>
-        <!-- <a
-          class="contact__btn btn__fancy"
-          href="mailto:xdimitaryanev@gmail.com"
-          target="_blank"
+
+        <form
+          action="https://getform.io/f/6d0c4697-01be-4519-9e8c-0f49ac6dfa1b"
+          method="POST"
         >
-          Reach out
-        </a> -->
+          <h4>Get in touch</h4>
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="email" name="email" required placeholder="Email" />
+          <input type="text" name="subject" required placeholder="Subject" />
+          <textarea
+            name="message"
+            required
+            placeholder="Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit" class="btn__fancy hero__btn">Send</button>
+        </form>
+
+        <div class="contact__socials">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dimitar-yanev-484164250"
+                class="fa fa-linkedin"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/xdimitaryanev"
+                class="fa fa-github"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="container divider"></div>
+        <a class="to__top" href="#top">Return to Top</a>
       </section>
     </main>
     <footer class="footer container"></footer>
