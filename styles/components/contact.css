@@ -12,6 +12,7 @@
     text-align: center;
     margin: 3em;
     font-size: var(--size-sm);
+    text-decoration: underline;
 }
 
 form {
