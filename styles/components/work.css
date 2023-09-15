@@ -15,36 +15,35 @@
 }
 
 .grid__element {
-    padding: 4em;
+    padding: 2em;
     border: 1px solid rgba(115, 84, 240, 0.280);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .grid__element img {
-    width: 40%;
+    width: 80%;
     border-radius: 1em;
     border: 2px solid rgba(115, 84, 240, 0.280);
     opacity: 90%;
     transition: all .5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.grid__element img:hover {
-    border: 2px solid rgb(115, 84, 240);
-}
 
 .grid__element p {
+    font-size: var(--size-xs);
     max-width: 50ch;
     color: var(--clr-slate400);
 }
 
 .grid__element h3 {
     color: var(--clr-slate300);
-    font-size: var(--size-base);
+    font-size: var(--size-xs);
     text-shadow: 0 0 5px var(--clr-blueviolet);
 }
 
@@ -56,15 +55,11 @@
     transition: all 0.5s;
     background: var(--clr-wintersky);
     box-shadow: 0 0 5px var(--clr-wintersky);
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
     padding: .2em .5em;
-    width: 7em;
+    width: 5em;
 }
     
-.btn__action:hover {
-    box-shadow: 0 0 5px var(--clr-wintersky),
-                0 0 25px var(--clr-wintersky)           
-}
 
 .btn__code {
     border-radius: 5px;
@@ -74,16 +69,11 @@
     transition: all 0.5s;
     background: var(--clr-blueviolet);
     box-shadow: 0 0 5px var(--clr-blueviolet);
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
     padding: .2em .5em;
-    width: 7em;
+    width: 5em;
 }
     
-.btn__code:hover {
-    box-shadow: 0 0 5px var(--clr-blueviolet),
-                0 0 25px var(--clr-blueviolet)           
-}
-
 .grid__element a {
     color: var(--clr-light);
     font-weight: 300;
@@ -94,5 +84,261 @@
     flex-direction: row;
     gap: 1em;
 }
+
+
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 475px) {
+
+    .work__grid {
+        row-gap: 5em;
+    }
+    
+    .grid__element {
+        padding: 2em;
+        gap: 1.2em;
+    }
+    
+    .grid__element img {
+        width: 65%;
+    }
+    .grid__element p {
+        font-size: var(--size-sm);
+    }
+
+    .grid__element h3 {
+        font-size: var(--size-sm);
+    }
+
+    .btn__action {
+        font-size: var(--size-sm);
+    }
+        
+    
+    .btn__code {
+        font-size: var(--size-sm);
+    }
+   
+}
+
+@media (min-width: 640px) {
+
+    .work__grid {
+        row-gap: 5em;
+    }
+    
+    .grid__element {
+        padding: 4em;
+        gap: 1.6em;
+    }
+    
+    .grid__element img {
+        width: 65%;
+    }
+     
+    .grid__element p {
+        max-width: 40ch;
+        font-size: var(--size-base);
+    }
+    
+    .grid__element h3 {
+        font-size: var(--size-base);
+    }
+    
+    .btn__action {
+        letter-spacing: 3px;
+        font-size: var(--size-sm);
+        padding: .2em .5em;
+        width: 6.7em;
+    }
+        
+    .btn__code {
+        font-size: var(--size-sm);
+        padding: .2em .5em;
+        width: 6.7em;
+    }
+        
+    .grid__element a {
+        font-weight: 300;
+    }
+    
+    .buttons__wrapper {
+        gap: 1.2em;
+    }
+
+}
+ 
+@media (min-width: 768px) {
+    .work__grid {
+        row-gap: 5em;
+    }
+    
+    .grid__element {
+        padding: 5em;
+        gap: 1.6em;
+    }
+    
+    .grid__element img {
+        width: 60%;
+    }
+     
+    .grid__element h3 {
+        font-size: var(--size-lg);
+    }
+    
+    .btn__action {
+        letter-spacing: 3px;
+        font-size: var(--size-base);
+        padding: .2em .5em;
+        width: 6.3em;
+    }
+        
+    .btn__code {
+        font-size: var(--size-base);
+        padding: .2em .5em;
+        width: 6.3em;
+    }
+        
+    .btn__action:hover {
+        box-shadow: 0 0 5px var(--clr-wintersky),
+                    0 0 25px var(--clr-wintersky)           
+    }
+
+    .btn__code:hover {
+        box-shadow: 0 0 5px var(--clr-blueviolet),
+                    0 0 25px var(--clr-blueviolet)           
+    }
+
+    .grid__element img:hover {
+        border: 2px solid rgb(115, 84, 240);
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .work__grid {
+        row-gap: 6em;
+        width: 70%;
+    }
+
+    .grid__element p {
+        max-width: 50ch;
+        font-size: var(--size-lg);
+    }
+    
+    .grid__element {
+        padding: 4em;
+        gap: 1.6em;
+    }
+    
+    .grid__element img {
+        width: 50%;
+    }
+     
+    .grid__element h3 {
+        font-size: var(--size-2xl);
+    }
+    
+    .btn__action {
+        letter-spacing: 3px;
+        font-size: var(--size-base);
+        padding: .2em .5em;
+        width: 6.3em;
+    }
+        
+    .btn__code {
+        font-size: var(--size-base);
+        padding: .2em .5em;
+        width: 6.3em;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .work__grid {
+        row-gap: 8em;
+        width: 50%;
+    }
+
+    .grid__element p {
+        max-width: 50ch;
+        font-size: var(--size-xl);
+    }
+    
+    .grid__element {
+        padding: 4em;
+        gap: 2em;
+    }
+    
+    .grid__element img {
+        width: 40%;
+    }
+     
+    .grid__element h3 {
+        font-size: var(--size-3xl);
+    }
+    
+    .btn__action {
+        letter-spacing: 3px;
+        font-size: var(--size-lg);
+        padding: .2em .5em;
+        width: 6.5em;
+    }
+        
+    .btn__code {
+        font-size: var(--size-lg);
+        padding: .2em .5em;
+        width: 6.5em;
+    }
+
+
+}
+
+@media (min-width: 1536px) {
+
+    .work__grid {
+        row-gap: 8em;
+
+    }
+
+    .grid__element p {
+        max-width: 55ch;
+        font-size: var(--size-xl);
+    }
+    
+    .grid__element {
+        padding: 4em;
+        gap: 2em;
+    }
+    
+    .grid__element img {
+        width: 35%;
+    }
+     
+    .grid__element h3 {
+        font-size: var(--size-3xl);
+    }
+    
+    .btn__action {
+        letter-spacing: 3px;
+        font-size: var(--size-xl);
+        padding: .2em .5em;
+        width: 6em;
+    }
+        
+    .btn__code {
+        font-size: var(--size-xl);
+        padding: .2em .5em;
+        width: 6em;
+    }
+
+
+}
+
 
 

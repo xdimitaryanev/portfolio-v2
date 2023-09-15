@@ -11,7 +11,7 @@
     max-width: 55ch;
     text-align: center;
     margin: 3em;
-    font-size: var(--size-xl);
+    font-size: var(--size-sm);
 }
 
 form {
@@ -21,7 +21,7 @@ form {
     width: 80%;
     color: var(--clr-slate500);
     border: 1px solid rgba(115, 84, 240, 0.280);
-    padding: 3em;
+    padding: 1.7em;
     justify-content: center;
     font-size: var(--size-lg);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -36,7 +36,7 @@ form input {
     border: 1px solid rgba(115, 84, 240, 0.280);
     padding: .7em;
     color: var(--clr-slate200);
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
     transition: border .5s ease;
 }
 
@@ -53,15 +53,15 @@ form textarea {
 
 form h4 {
     align-self: center;
-    font-size: var(--size-3xl);
+    font-size: var(--size-lg);
     margin: .5em;
 }
 
 form button {
     align-self: center;
     margin: 1em;
+    color: var(--clr-slate200);
 }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -73,9 +73,9 @@ input:-webkit-autofill:focus {
 
 input:focus {
     border: 1px solid rgb(115, 84, 240);
-  }
+}
 
-  form textarea:focus {
+form textarea:focus {
     border: 1px solid rgb(115, 84, 240);
 }
 
@@ -85,7 +85,6 @@ input:focus {
     justify-content: center;
     align-items: center;
     margin-top: 3em;
-
 }
 
 
@@ -97,30 +96,22 @@ input:focus {
 
 .fa {
     color: var(--clr-slate500);
-    font-size: var(--size-5xl);
+    font-size: var(--size-3xl);
     transition: all .4s ease-in;
-
 }
 
-.fa:hover {
-    text-shadow:
-    0 0 10px var(--clr-blueviolet),
-    0 0 25px var(--clr-blueviolet);
-
-}
 
 .to__top__wrapper {
     display: grid;
     justify-content: center;
     align-items: center;
     justify-items: center;
-
 }
 
 .to__top {
     text-decoration: none;
     color: var(--clr-slate400);
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
     grid-row: 1/2;
     grid-column: 1/2;
     transition: all .5s ease-out;
@@ -128,18 +119,9 @@ input:focus {
 }
 
 
-.to__top__wrapper:hover .arrow {
-    transform: translateY(-18px);
-    opacity: 100;
-}
-
-.to__top__wrapper:hover .to__top {
-    transform: translateY(10px);
-    color: var(--clr-slate200);
-}
 
 .arrow {
-    height: 40px;
+    height: 30px;
     grid-row: 1/2;
     grid-column: 1/2;
     opacity: 0;
@@ -148,6 +130,307 @@ input:focus {
 }
 
 
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 475px) {
+    
+.contact__content {
+    max-width: 40ch;
+    margin: 3em;
+    font-size: var(--size-base);
+}
+
+form {
+    gap: .5em;
+    padding: 1.8em;
+    font-size: var(--size-lg);
+    margin-bottom: 2em;
+}
+
+form input {
+    padding: .7em;
+    font-size: var(--size-sm);
+}
+
+form textarea {
+    padding: .7em;
+    font-size: var(--size-base);
+}
+
+form h4 {
+    font-size: var(--size-xl);
+    margin: .5em;
+}
+
+form button {
+    margin: 1em;
+}
+
+.contact__socials {
+    margin-top: 3em;
+}
 
 
+.contact__socials ul {
+    gap: 3em;
+}
+
+.fa {
+    font-size: var(--size-4xl);
+}
+
+
+
+.to__top {
+    font-size: var(--size-sm);
+}
+
+
+}
+
+@media (min-width: 640px) {
+
+       
+.contact__content {
+    max-width: 40ch;
+    margin: 3em;
+    font-size: var(--size-base);
+}
+
+form {
+    gap: .5em;
+    padding: 2em;
+    font-size: var(--size-2xl);
+    margin-bottom: 2em;
+}
+
+form input {
+    padding: .7em;
+    font-size: var(--size-sm);
+}
+
+form textarea {
+    padding: .7em;
+    font-size: var(--size-base);
+}
+
+form h4 {
+    font-size: var(--size-xl);
+    margin: .5em;
+}
+
+form button {
+    margin: 1em;
+}
+
+.contact__socials {
+    margin-top: 3em;
+}
+
+
+.contact__socials ul {
+    gap: 3em;
+}
+
+.fa {
+    font-size: var(--size-4xl);
+}
+
+
+
+.to__top {
+    font-size: var(--size-sm);
+}
+
+
+}
+
+
+ 
+@media (min-width: 768px) {
+    .to__top__wrapper:hover .arrow {
+        transform: translateY(-18px);
+        opacity: 100;
+    }
+    
+    .to__top__wrapper:hover .to__top {
+        transform: translateY(10px);
+        color: var(--clr-slate200);
+    }
+
+    .fa:hover {
+        text-shadow:
+        0 0 10px var(--clr-blueviolet),
+        0 0 25px var(--clr-blueviolet);
+    }
+
+           
+.contact__content {
+    max-width: 40ch;
+    margin: 3em;
+    font-size: var(--size-lg);
+}
+
+form {
+    gap: .4em;
+    padding: 2em;
+    font-size: var(--size-3xl);
+    margin-bottom: 2em;
+    width: 75%;
+}
+
+form input {
+    padding: .7em;
+    font-size: var(--size-base);
+}
+
+form textarea {
+    padding: .7em;
+    font-size: var(--size-base);
+}
+
+form h4 {
+    font-size: var(--size-2xl);
+    margin: .5em;
+}
+
+form button {
+    margin: 1em;
+}
+
+.contact__socials {
+    margin-top: 3em;
+}
+
+
+.contact__socials ul {
+    gap: 3em;
+}
+
+.fa {
+    font-size: var(--size-5xl);
+}
+
+
+
+.to__top {
+    font-size: var(--size-base);
+}
+
+
+}
+
+@media (min-width: 1024px) {
+
+         
+.contact__content {
+    max-width: 50ch;
+    margin: 3em;
+    font-size: var(--size-lg);
+}
+
+form {
+    gap: .4em;
+    padding: 2em;
+    font-size: var(--size-3xl);
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+form input {
+    font-size: var(--size-lg);
+}
+
+form textarea {
+    font-size: var(--size-lg);
+}
+
+form h4 {
+    font-size: var(--size-3xl);
+    margin: .5em;
+}
+
+form button {
+    margin: 1em;
+}
+
+.contact__socials {
+    margin-top: 3em;
+}
+
+
+.contact__socials ul {
+    gap: 3em;
+}
+
+.fa {
+    font-size: var(--size-5xl);
+}
+
+
+
+.to__top {
+    font-size: var(--size-base);
+}
+
+
+}
+
+@media (min-width: 1280px) {
+    .contact__content {
+        max-width: 50ch;
+        margin: 3em;
+        font-size: var(--size-xl);
+    }
+    
+    form {
+        gap: .3em;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        width: 65%;
+    }
+    
+    form input {
+        font-size: var(--size-xl);
+    }
+    
+    form textarea {
+        font-size: var(--size-xl);
+    }
+    
+    form h4 {
+        font-size: var(--size-5xl);
+        margin: .5em;
+    }
+    
+    form button {
+        margin: 1em;
+    }
+    
+    .contact__socials {
+        margin-top: 3em;
+    }
+    
+    
+    .contact__socials ul {
+        gap: 3em;
+    }
+    
+    .fa {
+        font-size: var(--size-6xl);
+    }
+    
+    
+    
+    .to__top {
+        font-size: var(--size-lg);
+    }
+
+}
+
+@media (min-width: 1536px) {
+
+}
 

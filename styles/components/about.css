@@ -61,7 +61,7 @@
 }
 
 .about__certimg {
-    width: 4em;
+    width: 3.8em;
     margin: var(--size-2xl);
     padding: 0.5em 0.5em;
     border-radius: 10%;
@@ -84,7 +84,7 @@
  .about__certlist a {
     color: var(--clr-slate500);
     font-weight: 300;
-    font-size: var(--size-xxs);
+    font-size: var(--size-xs);
     cursor: pointer;
     transition: color 0.3s;
     line-height: 2em;

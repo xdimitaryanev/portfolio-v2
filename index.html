@@ -171,18 +171,20 @@
       <section class="work container section">
         <h2 id="work" class="title hidden-blur">Work</h2>
         <div class="work__grid">
-          <div class="grid__element hidden-blur">
-            <h3>BlackJack Game</h3>
-            <img src="bj.png" alt="" />
+          <div class="grid__element">
+            <h3 class="hidden-left">BlackJack Game</h3>
+            <img 
+   class="hidden-blur"
+            src="bj.png" alt="" />
             <div class="buttons__wrapper">
-              <button class="btn__action">
+              <button class="btn__action hidden-blur">
                 <a
                   href="https://my-black-jack-game-x8au.vercel.app/"
                   target="_blank"
                   >Try</a
                 >
               </button>
-              <button class="btn__code">
+              <button class="btn__code hidden-blur">
                 <a
                   href="https://github.com/xdimitaryanev/myBlackJackGame"
                   target="_blank"
@@ -190,32 +192,32 @@
                 >
               </button>
             </div>
-            <p>
-              In this project, I designed and developed an engaging web-based
+            <p class="hidden-left">
+              In this project, I designed and developed an engaging
               Blackjack game using JavaScript, CSS, and HTML. Through this
               endeavor, I honed my programming skills and gained a deep
               understanding of game logic.
             </p>
           </div>
 
-          <div class="grid__element hidden-blur">
-            <h3>Product Listing Page</h3>
-            <img src="plp.png" alt="" />
+          <div class="grid__element">
+            <h3 class="hidden-left">Product Listing Page</h3>
+            <img  class="hidden-blur" src="plp.png" alt="" />
             <div class="buttons__wrapper">
               <a
-                class="btn__action"
+                class="btn__action hidden-blur"
                 href="https://product-listing-page-nine.vercel.app/"
                 target="_blank"
                 >try</a
               >
               <a
-                class="btn__code"
+                class="btn__code hidden-blur"
                 href="https://github.com/xdimitaryanev/product-listing-page/tree/deploy"
                 target="_blank"
                 >Code</a
               >
             </div>
-            <p>
+            <p class="hidden-left">
               In this project, I developed a responsive and user-friendly
               product listing page using Vanilla JavaScript, CSS and HTML. The
               page dynamically rendered product data from a JSON file, allowing
@@ -229,7 +231,7 @@
       <section class="section-divider container section"></section>
       <section class="contact container section">
         <h2 id="contact" class="title hidden-blur">Contact</h2>
-        <p class="contact__content">
+        <p class="contact__content hidden-left">
           If you have a project in mind, a question, or just want to say hello,
           feel free to reach out to me.
         </p>
@@ -239,20 +241,21 @@
           method="POST"
         >
           <h4>Get in touch</h4>
-          <input type="text" name="name" required placeholder="Name" />
-          <input type="email" name="email" required placeholder="Email" />
-          <input type="text" name="subject" required placeholder="Subject" />
+          <input class="hidden-blur" type="text" name="name" required placeholder="Name" />
+          <input class="hidden-blur" type="email" name="email" required placeholder="Email" />
+          <input class="hidden-blur" type="text" name="subject" required placeholder="Subject" />
           <textarea
+          class="hidden-blur"
             name="message"
             required
             placeholder="Message"
             cols="30"
             rows="10"
           ></textarea>
-          <button type="submit" class="btn__fancy hero__btn">Send</button>
+          <button type="submit" class="btn__action">Send</button>
         </form>
 
-        <div class="contact__socials">
+        <div class="contact__socials hidden-left">
           <ul>
             <li>
               <a
