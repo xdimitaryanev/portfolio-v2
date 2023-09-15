@@ -71,7 +71,7 @@
     0 0 30px var(--clr-blueviolet);
 }
 
-.about h3 a {
+.about h3 {
     color: var(--clr-slate500);
     font-size: var(--size-base);
 }
@@ -130,7 +130,7 @@
         font-size: var(--size-lg);  
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-lg);
     }
 
@@ -168,7 +168,7 @@
         margin: var(--size-2xl);
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-xl);
     }
       
@@ -211,7 +211,7 @@
         margin: var(--size-3xl);
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-2xl);
     }
       
@@ -253,7 +253,7 @@
         margin: var(--size-4xl);
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-2xl);
     }
       
@@ -297,7 +297,7 @@
         margin: var(--size-5xl);
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-2xl);
     }
       
@@ -340,7 +340,7 @@
         margin: var(--size-5xl);
     }
     
-    .about h3 a {
+    .about h3 {
         font-size: var(--size-3xl);
     }
     
