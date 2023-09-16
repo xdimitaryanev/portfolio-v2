@@ -26,9 +26,6 @@ const mobileObserver = new IntersectionObserver((entries)=> {
 })
 mobileEl.forEach((el)=>mobileObserver.observe(el))
 
-
-
-
 // unblur on scroll
 const blurredEl = document.querySelectorAll(".hidden-blur");
 const blurObserver = new IntersectionObserver((entries)=> {
@@ -65,25 +62,19 @@ const hiddenLeftObserver = new IntersectionObserver((entries)=> {
 
 hiddenLeftEl.forEach((el)=>hiddenLeftObserver.observe(el));
 
-
-
-
 const headerAboutEL = document.querySelectorAll(".header__about");
-const aboutImg = document.querySelector("#about");
+const aboutTitleEl = document.querySelector("#about");
 
 headerAboutEL.forEach(element => {
   element.
   addEventListener("click", (e)=>{
   e.preventDefault()
-  aboutImg.scrollIntoView({ behavior: "smooth",inline: "nearest" });
+  aboutTitleEl.scrollIntoView({ behavior: "smooth",inline: "nearest" });
   mobileMenuEl.style.display = "none";
   document.body.style.overflow = "";
 })
   
 });
-
-
-
 
 const headerWorkEl = document.querySelectorAll(".header__work");
 const workTitleEl = document.querySelector("#work");
@@ -97,7 +88,6 @@ headerWorkEl.forEach(element => {
   })
   
 });
-
 
 const headerContactEl = document.querySelectorAll(".header__contact");
 const contactTitleEl = document.querySelector("#contact");
@@ -123,11 +113,54 @@ xEl.addEventListener("click", (e) => {
   document.body.style.overflow = "";
 })
 
-barsEl.addEventListener("click", (e) => {
+barsEl.addEventListener("click", () => {
   document.body.style.overflow = "hidden";
   isMobileMenuOpen = true;
   mobileMenuEl.style.display = "flex";
 })
 
+const aboutImgEl = document.querySelector(".about__img")
+const aboutImgWrapperEl = document.querySelector(".about__img__wrapper");
+const linkedinEl = document.querySelector(".hidden-linkedin");
+
+aboutImgWrapperEl.addEventListener("mouseover", ()=> {
+    linkedinEl.style.opacity = 100;
+    linkedinEl.style.transform = "translateX(13px)"
+})
+
+aboutImgWrapperEl.addEventListener("mouseout", ()=> {
+    linkedinEl.style.opacity = 0;
+    linkedinEl.style.transform = "translateX(-13px)"
+})
+
+const githubEl = document.querySelector(".hidden-github");
+aboutImgWrapperEl.addEventListener("mouseover", ()=> {
+  aboutImgEl.style.scale = 1.05;
+    githubEl.style.opacity = 100;
+    githubEl.style.transform = "translateX(-13px)"
+})
+
+aboutImgWrapperEl.addEventListener("mouseout", ()=> {
+  aboutImgEl.style.scale = 1;
+  githubEl.style.opacity = 0;
+  githubEl.style.transform = "translateX(13px)"
+})
+
+githubEl.addEventListener("mouseover", ()=>{
+  githubEl.style.scale = 1.1;
+})
+
+githubEl.addEventListener("mouseout", ()=>{
+  githubEl.style.scale = 1;
+})
+
+
+linkedinEl.addEventListener("mouseover", ()=>{
+  linkedinEl.style.scale = 1.1;
+})
+
+linkedinEl.addEventListener("mouseout", ()=>{
+  linkedinEl.style.scale = 1;
+})
 
 

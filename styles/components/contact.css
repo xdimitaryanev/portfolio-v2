@@ -95,7 +95,7 @@ form textarea:focus {
     gap: 3em;
 }
 
-.fa {
+.social-icons {
     color: var(--clr-slate500);
     font-size: var(--size-3xl);
     transition: all .4s ease-in;
@@ -179,7 +179,7 @@ form button {
     gap: 3em;
 }
 
-.fa {
+.social-icons {
     font-size: var(--size-4xl);
 }
 
@@ -236,7 +236,7 @@ form button {
     gap: 3em;
 }
 
-.fa {
+.social-icons {
     font-size: var(--size-4xl);
 }
 
@@ -262,7 +262,7 @@ form button {
         color: var(--clr-slate200);
     }
 
-    .fa:hover {
+    .social-icons:hover {
         text-shadow:
         0 0 10px var(--clr-blueviolet),
         0 0 25px var(--clr-blueviolet);
@@ -311,7 +311,7 @@ form button {
     gap: 3em;
 }
 
-.fa {
+.social-icons {
     font-size: var(--size-5xl);
 }
 
@@ -367,7 +367,7 @@ form button {
     gap: 3em;
 }
 
-.fa {
+.social-icons {
     font-size: var(--size-5xl);
 }
 
@@ -420,7 +420,7 @@ form button {
         gap: 3em;
     }
     
-    .fa {
+    .social-icons {
         font-size: var(--size-6xl);
     }
     

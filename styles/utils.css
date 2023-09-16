@@ -19,21 +19,21 @@
     opacity: 0;
     transform: translateY(-100%);
     filter: blur(15px);
-    transition: all 1s;
+    transition: all .5s ease-in-out;
 }
 
 .hidden-left {
     opacity: 0;
     transform: translateX(-100%);
     filter: blur(15px);
-    transition: all 1s;
+    transition: all .5s ease-in-out;
 }
 
 .hidden-right {
     opacity: 0;
     transform: translateX(100%);
     filter: blur(15px);
-    transition: all 1s;
+    transition: all .5s ease-in-out;
     }
 
 .show {
@@ -45,12 +45,12 @@
 
 .hidden-blur {
     filter: blur(20px);
-    transition: all 1s ease;
+    transition: all .5s ease-in-out;
 }
 
 .hidden {
     filter: blur(20px);
-    transition: all .5s ease-out;
+    transition: all .5s ease-in-out;
 }
 
 .unblur {

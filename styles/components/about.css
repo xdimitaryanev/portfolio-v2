@@ -15,16 +15,16 @@
 .about__img {
     height: var(--size-7xl);
     border-radius: 50%;
-    margin-bottom: var(--size-lg);
-    margin-top: var(--size-6xl);
+
     border: 3px solid var(--clr-blueviolet);
     cursor: pointer;
+    z-index: 2;
+}
+.about__img__wrapper {
+    margin-bottom: var(--size-lg);
+    margin-top: var(--size-6xl);
 }
 
-.about__img:hover {
-    box-shadow: 0 0 5px var(--clr-blueviolet),
-                0 0 20px var(--clr-blueviolet);
-}
 
 .about__content {
     color: var(--clr-slate400);
@@ -111,6 +111,37 @@
     color: var(--clr-slate400);
   }
 
+  .hidden-linkedin {
+    font-size: var(--size-xl);
+    opacity: 0;
+    color: var(--clr-slate200);
+    padding: .2em;
+    transition: all .5s ease-in-out;
+  }
+
+  .hidden-github {
+    font-size: var(--size-xl);
+    opacity: 0;
+    color: var(--clr-slate200);
+    padding: .2em;
+    transition: all .5s ease-in-out;
+  }
+
+  .hidden-github:hover {
+    text-shadow: 0 0 15px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet);     
+  }
+
+  .hidden-linkedin:hover {
+    text-shadow: 0 0 15px var(--clr-blueviolet),
+    0 0 20px var(--clr-blueviolet);   
+  }
+
+  .about__img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   @media (min-width: 375px) {
@@ -118,6 +149,14 @@
     .about__certlist a {
         font-size: var(--size-xs);
     }
+
+    .hidden-linkedin {
+        font-size: var(--size-2xl);
+      }
+    
+      .hidden-github {
+        font-size: var(--size-2xl);
+      }
   }
   
   @media (min-width: 475px) {
@@ -144,6 +183,9 @@
     
     .about__img {
         height: 5.5rem;
+    }
+
+    .about__img__wrapper {
         margin-bottom: var(--size-2xl);
         margin-top: var(--size-6xl);
     }
@@ -175,6 +217,14 @@
     .about__certlist a {
         font-size: var(--size-sm);
       }  
+
+      .hidden-linkedin {
+        font-size: var(--size-3xl);
+      }
+    
+      .hidden-github {
+        font-size: var(--size-3xl);
+      }
   
   }
    
@@ -186,6 +236,9 @@
     
     .about__img {
         height: 6rem;
+    }
+
+    .about__img__wrapper {
         margin-bottom: var(--size-3xl);
         margin-top: var(--size-7xl);
     }
@@ -218,6 +271,14 @@
     .about__certlist a {
         font-size: var(--size-base);
       }  
+
+      .hidden-linkedin {
+        font-size: var(--size-4xl);
+      }
+    
+      .hidden-github {
+        font-size: var(--size-4xl);
+      }
   }
   
   @media (min-width: 1024px) {
@@ -228,8 +289,6 @@
     
     .about__img {
         height: 6.5rem;
-        margin-bottom: var(--size-3xl);
-        margin-top: var(--size-7xl);
     }
      
     .about__content {
@@ -272,6 +331,9 @@
     
     .about__img {
         height: 6.5rem;
+    }
+
+    .about__img__wrapper {
         margin-bottom: var(--size-4xl);
         margin-top: var(--size-8xl);
     }
@@ -315,6 +377,9 @@
     
     .about__img {
         height: 7.5rem;
+    }
+
+    .about__img__wrapper {
         margin-bottom: var(--size-5xl);
         margin-top: var(--size-9xl);
     }
