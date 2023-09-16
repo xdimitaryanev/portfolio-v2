@@ -15,12 +15,6 @@
 
 
 /* ON SCROLL EFFECTS */
-.hidden-top {
-    opacity: 0;
-    transform: translateY(-100%);
-    filter: blur(15px);
-    transition: all .5s ease-in-out;
-}
 
 .hidden-left {
     opacity: 0;
@@ -28,13 +22,6 @@
     filter: blur(15px);
     transition: all .5s ease-in-out;
 }
-
-.hidden-right {
-    opacity: 0;
-    transform: translateX(100%);
-    filter: blur(15px);
-    transition: all .5s ease-in-out;
-    }
 
 .show {
     opacity: 100;
@@ -50,7 +37,7 @@
 
 .hidden {
     filter: blur(20px);
-    transition: all .5s ease-in-out;
+    transition: all .5s ease;
 }
 
 .unblur {
