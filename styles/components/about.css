@@ -15,11 +15,12 @@
 .about__img {
     height: var(--size-7xl);
     border-radius: 50%;
-
     border: 3px solid var(--clr-blueviolet);
     cursor: pointer;
     z-index: 2;
 }
+
+
 .about__img__wrapper {
     margin-bottom: var(--size-lg);
     margin-top: var(--size-6xl);
@@ -117,6 +118,7 @@
     color: var(--clr-slate200);
     padding: .2em;
     transition: all .5s ease-in-out;
+    text-shadow: 0 0 55px var(--clr-blueviolet);
   }
 
   .hidden-github {
@@ -125,6 +127,7 @@
     color: var(--clr-slate200);
     padding: .2em;
     transition: all .5s ease-in-out;
+    text-shadow: 0 0 55px var(--clr-blueviolet);
   }
 
   .hidden-github:hover {
@@ -134,7 +137,7 @@
 
   .hidden-linkedin:hover {
     text-shadow: 0 0 15px var(--clr-blueviolet),
-    0 0 20px var(--clr-blueviolet);   
+                 0 0 20px var(--clr-blueviolet);   
   }
 
   .about__img__wrapper {
