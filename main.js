@@ -164,3 +164,9 @@ linkedinEl.addEventListener("mouseout", ()=>{
 })
 
 
+const contactFormEl = document.querySelector(".contact__form");
+contactFormEl.addEventListener("submit", () => {
+  contactFormEl.reset();
+})
+
+
